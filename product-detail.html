@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Product detail on WebMart with gallery, seller card, reviews, and premium purchase actions." />
+    <title>Product • WebMart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="page" data-page="product" data-title="Product">
+    <div data-shell></div>
+
+    <main id="main">
+      <section class="section tight">
+        <div class="container wide">
+          <div class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span class="sep">/</span>
+            <a href="browse.html">Shop</a><span class="sep">/</span>
+            <span aria-current="page">Product</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tight">
+        <div class="container wide">
+          <div class="layout-2" style="grid-template-columns: 1.2fr .8fr;">
+            <section>
+              <div class="card pad">
+                <div class="grid" style="grid-template-columns: 1fr; gap: 10px;">
+                  <div class="card" style="overflow:hidden;border-radius:22px;">
+                    <img data-main-image alt="" style="width:100%;display:block;cursor:zoom-in;" />
+                  </div>
+                  <div class="thumb-grid" data-thumbs aria-label="Product images"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="row wrap" style="justify-content:space-between;">
+                  <div class="row wrap" style="gap:10px;">
+                    <span class="badge success">SSL</span>
+                    <span class="badge">Secure checkout</span>
+                    <span class="badge accent">Buyer protection</span>
+                  </div>
+                  <div class="row wrap">
+                    <button class="btn ghost small" type="button" data-share>Share</button>
+                    <button class="btn ghost small" type="button" data-report>Report listing</button>
+                  </div>
+                </div>
+              </div>
+
+              <div style="height:12px;"></div>
+
+              <div class="card pad">
+                <h2 style="margin:0 0 6px;" data-title></h2>
+                <div class="row wrap" style="justify-content:space-between;">
+                  <div class="note" data-subtitle></div>
+                  <div class="rating" data-rating></div>
+                </div>
+                <div class="divider"></div>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+                  <div class="field">
+                    <label>Variants</label>
+                    <div class="grid" style="gap:10px;" data-variants></div>
+                  </div>
+                  <div class="field">
+                    <label>Quantity</label>
+                    <div class="row" style="gap:10px;">
+                      <button class="btn outline small" type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+                      <input class="input" style="max-width:120px;" name="qty" inputmode="numeric" value="1" aria-label="Quantity" />
+                      <button class="btn outline small" type="button" data-qty-plus aria-label="Increase quantity">+</button>
+                    </div>
+                    <div class="note">Price updates instantly with shipping estimate.</div>
+                  </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 14px; align-items:start;">
+                  <div>
+                    <h3>About this item</h3>
+                    <p data-description></p>
+                    <div class="row wrap" style="margin-top:10px;" data-tags></div>
+                  </div>
+                  <div class="card pad">
+                    <strong>Price breakdown</strong>
+                    <div class="divider"></div>
+                    <div class="row space-between"><span class="muted">Item</span><strong data-price-item>$0</strong></div>
+                    <div class="row space-between"><span class="muted">Shipping</span><strong data-price-ship>$0</strong></div>
+                    <div class="row space-between"><span class="muted">Estimated tax</span><strong data-price-tax>$0</strong></div>
+                    <div class="divider"></div>
+                    <div class="row space-between"><span><strong>Total</strong></span><strong data-price-total>$0</strong></div>
+                    <div class="row wrap" style="margin-top:12px;">
+                      <button class="btn primary block" type="button" data-buy-now>Buy Now</button>
+                      <button class="btn outline block" type="button" data-make-offer>Make Offer</button>
+                      <button class="btn ghost block" type="button" data-add-to-cart>Save to Cart</button>
+                    </div>
+                    <p class="note" style="margin-top:10px;">Payments are placeholders for this prototype.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div style="height:12px;"></div>
+
+              <div class="card pad">
+                <div class="row space-between">
+                  <h3 style="margin:0;">Reviews</h3>
+                  <a class="btn ghost small" href="faq.html">How reviews work</a>
+                </div>
+                <div class="divider"></div>
+                <div data-reviews class="grid" style="grid-template-columns: 1fr 1fr; gap: 12px;"></div>
+              </div>
+
+              <div style="height:12px;"></div>
+
+              <div class="card pad">
+                <div class="row space-between">
+                  <h3 style="margin:0;">Similar products</h3>
+                  <a class="btn ghost small" href="browse.html">Browse more</a>
+                </div>
+                <div class="divider"></div>
+                <div class="carousel" data-similar></div>
+              </div>
+            </section>
+
+            <aside>
+              <div class="card pad">
+                <strong>Seller</strong>
+                <div class="divider"></div>
+                <div class="seller" data-seller></div>
+                <div class="divider"></div>
+                <div class="row wrap">
+                  <a class="btn outline" href="profile.html">View profile</a>
+                  <a class="btn primary" href="messages.html">Message</a>
+                </div>
+              </div>
+
+              <div style="height:12px;"></div>
+
+              <div class="card pad">
+                <strong>Safety & trust</strong>
+                <div class="divider"></div>
+                <div class="note">Look for verified badges, review counts, and fast response metrics before purchasing.</div>
+                <div class="accordion" style="margin-top:12px;">
+                  <div class="acc-item" aria-expanded="false">
+                    <button class="acc-btn" type="button" data-acc>
+                      <strong>Secure payments</strong><span aria-hidden="true">▾</span>
+                    </button>
+                    <div class="acc-panel">Checkout UI includes secure badges and confirmation states. Payment processing is a placeholder in this prototype.</div>
+                  </div>
+                  <div class="acc-item" aria-expanded="false">
+                    <button class="acc-btn" type="button" data-acc>
+                      <strong>Reporting</strong><span aria-hidden="true">▾</span>
+                    </button>
+                    <div class="acc-panel">Report suspicious listings or block users from the inbox. This demo shows the complete UI flow.</div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/pages/product-detail.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Search results on WebMart with smart suggestions, filters, and empty-state guidance." />
+    <title>Search • WebMart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="page" data-page="search" data-title="Search">
+    <div data-shell></div>
+
+    <main id="main">
+      <section class="section tight">
+        <div class="container wide">
+          <div class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span class="sep">/</span>
+            <span aria-current="page">Search</span>
+          </div>
+          <div class="section-title" style="margin-top:10px;">
+            <div>
+              <h1 style="margin:0 0 8px;">Search results</h1>
+              <p>Instant search with smart suggestions, filters, and helpful empty states.</p>
+            </div>
+            <div class="row wrap">
+              <a class="btn outline" href="browse.html">Browse</a>
+              <a class="btn primary" href="sell.html">Sell</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tight">
+        <div class="container wide">
+          <div class="toolbar">
+            <div class="search" style="flex:1;" data-search-bar>
+              <input type="search" aria-label="Search" placeholder="Search for products..." />
+              <div class="search-pop" aria-hidden="true"></div>
+            </div>
+            <select class="select" data-sort aria-label="Sort">
+              <option value="relevance">Relevance</option>
+              <option value="price_asc">Price: Low to high</option>
+              <option value="price_desc">Price: High to low</option>
+              <option value="rating_desc">Rating</option>
+            </select>
+          </div>
+
+          <div style="height:14px;"></div>
+          <div class="row wrap" style="gap:8px;">
+            <div class="pill">Suggested: <span class="kbd">headphones</span></div>
+            <div class="pill">Try: <span class="kbd">bike</span></div>
+            <div class="pill">Or: <span class="kbd">camera</span></div>
+          </div>
+
+          <div style="height:14px;"></div>
+          <div data-results class="products-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/pages/search-page.js"></script>
+  </body>
+</html>

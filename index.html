@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WebMart — premium peer-to-peer marketplace demo. Buy and sell in seconds with a best-in-class UX." />
+    <meta name="theme-color" content="#2563eb" />
+    <title>WebMart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="page" data-page="home" data-title="Home">
+    <div data-shell></div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container wide">
+          <div class="hero-card glass strong">
+            <div class="hero-grid">
+              <div>
+                <div class="pill" style="width:fit-content;margin-bottom:12px;">
+                  <span aria-hidden="true">✨</span>
+                  <strong>Premium marketplace</strong>
+                  <span class="muted">Buy & sell in seconds</span>
+                </div>
+                <h1>Sell faster. Shop smarter. <br/>Meet the new standard.</h1>
+                <p>WebMart is a premium peer-to-peer marketplace designed for trust, speed, and beautiful simplicity. List a product in under 30 seconds and find the perfect item in under 15.</p>
+                <div class="hero-cta">
+                  <a class="btn sell" href="sell.html">Start Selling</a>
+                  <a class="btn primary" href="browse.html">Shop Now</a>
+                  <a class="btn outline" href="browse.html#compare">Compare products</a>
+                </div>
+                <ul class="hero-bullets" aria-label="Key benefits">
+                  <li>
+                    <span aria-hidden="true">✅</span>
+                    <span><strong>Instant search</strong> with live suggestions and smart filters.</span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true">🛡️</span>
+                    <span><strong>Trust signals</strong>: verified sellers, response times, and safety controls.</span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true">⚡</span>
+                    <span><strong>Fast flows</strong>: cart + checkout with optimistic UI and clear feedback.</span>
+                  </li>
+                </ul>
+              </div>
+              <aside class="hero-side glass">
+                <div class="card pad">
+                  <div class="row space-between">
+                    <strong>Trending right now</strong>
+                    <a class="btn ghost small" href="browse.html">View all</a>
+                  </div>
+                  <div class="divider"></div>
+                  <div data-home-trending-mini class="grid" style="gap:10px;"></div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat">
+                    <strong data-counter="listings">12,480</strong>
+                    <span>active listings</span>
+                  </div>
+                  <div class="stat">
+                    <strong data-counter="sellers">3,210</strong>
+                    <span>verified sellers</span>
+                  </div>
+                  <div class="stat">
+                    <strong data-counter="minutes">38</strong>
+                    <span>avg response (min)</span>
+                  </div>
+                </div>
+                <div class="card pad">
+                  <strong>Buyer promise</strong>
+                  <p class="note" style="margin:6px 0 0;">Clear pricing, transparent conditions, and seller verification badges help you buy with confidence.</p>
+                  <div class="row wrap" style="margin-top:10px;">
+                    <span class="badge success">Verified</span>
+                    <span class="badge accent">Top rated</span>
+                    <span class="badge">Fast shipper</span>
+                    <span class="badge danger">Report listing</span>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tight">
+        <div class="container wide">
+          <div class="section-title">
+            <div>
+              <h2>Featured categories</h2>
+              <p>Explore premium picks across every category.</p>
+            </div>
+            <a class="btn outline small" href="categories.html">All categories</a>
+          </div>
+          <div class="category-grid" data-home-categories></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container wide">
+          <div class="section-title">
+            <div>
+              <h2>Trending products</h2>
+              <p>Curated deals with standout sellers and fast shipping options.</p>
+            </div>
+            <a class="btn ghost small" href="browse.html">Shop trending</a>
+          </div>
+          <div class="carousel" data-home-trending></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container wide">
+          <div class="section-title">
+            <div>
+              <h2>How it works</h2>
+              <p>Progressive disclosure. Instant feedback. Zero learning curve.</p>
+            </div>
+          </div>
+          <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="card pad">
+              <h3>Buy in 3 steps</h3>
+              <ol style="margin:0; padding-left:18px; color: var(--muted);">
+                <li>Search with autocomplete + smart filters.</li>
+                <li>Use quick view and compare to decide fast.</li>
+                <li>Checkout with clear pricing and confirmation.</li>
+              </ol>
+            </div>
+            <div class="card pad">
+              <h3>Sell in 3 steps</h3>
+              <ol style="margin:0; padding-left:18px; color: var(--muted);">
+                <li>Upload up to 8 photos with drag & reorder.</li>
+                <li>Get price suggestions and offer toggles.</li>
+                <li>Preview, publish, then manage in dashboard.</li>
+              </ol>
+            </div>
+            <div class="card pad">
+              <h3>Trust & safety</h3>
+              <ul style="margin:0; padding-left:18px; color: var(--muted);">
+                <li>Verified seller badges and response metrics.</li>
+                <li>Report listings and block users in messages.</li>
+                <li>Secure payment indicators (UI placeholders).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container wide">
+          <div class="section-title">
+            <div>
+              <h2>Featured sellers</h2>
+              <p>Top performers with fast response and great reviews.</p>
+            </div>
+          </div>
+          <div class="grid" style="grid-template-columns: repeat(3, 1fr);" data-home-sellers></div>
+        </div>
+      </section>
+
+      <section class="section tight">
+        <div class="container wide">
+          <div class="section-title">
+            <div>
+              <h2>Recent views</h2>
+              <p>Pick up where you left off.</p>
+            </div>
+          </div>
+          <div data-home-recents></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container wide">
+          <div class="section-title">
+            <div>
+              <h2>Testimonials</h2>
+              <p>Meaningful, specific feedback—no filler.</p>
+            </div>
+          </div>
+          <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="card pad">
+              <h3>“Listed in under a minute.”</h3>
+              <p>Draft autosave and photo reordering made it ridiculously easy to get a premium listing live.</p>
+              <p class="note"><strong>— Maya, Verified Seller</strong></p>
+            </div>
+            <div class="card pad">
+              <h3>“Search feels instant.”</h3>
+              <p>Filters update fast and the UI makes the best choice obvious. Compare is a game-changer.</p>
+              <p class="note"><strong>— Jordan, Power Buyer</strong></p>
+            </div>
+            <div class="card pad">
+              <h3>“The cleanest UX I’ve seen.”</h3>
+              <p>Everything is where you expect it. Clear micro-interactions and great mobile experience.</p>
+              <p class="note"><strong>— Sofia, Top Rated</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/pages/home.js"></script>
+  </body>
+</html>
+
